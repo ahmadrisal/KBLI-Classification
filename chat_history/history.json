@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "Tanyakan apa saja tentang KBLI"
+  },
+  {
+    "role": "user",
+    "content": "Siapakah lionel messi?"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode:** 93192\n- **Nama:** Olahragawan, Juri dan Wasit Profesional\n- **Deskripsi:** Kelompok ini mencakup kegiatan olahragawan, juri, dan wasit profesional yang bertindak atas nama perorangan."
+  },
+  {
+    "role": "user",
+    "content": "Kode KBLI yang membahas tentang \"Pertanian Gandum\" adalah?"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode:** 01112\n- **Nama:** Pertanian Gandum\n- **Deskripsi:** Kelompok ini mencakup usaha pertanian gandum mulai dari kegiatan pengolahan lahan, penanaman, pemeliharaan, dan juga pemanenan dan pasca panen jika menjadi satu kesatuan kegiatan tanaman serealia gandum, seperti sorgum/cantel, gandum (wheat/oats), jelai (barley), gandum hitam (rye), jawawut (millet) dan sejenisnya. Termasuk kegiatan pembibitan dan pembenihan tanaman gandum."
+  },
+  {
+    "role": "user",
+    "content": "bagaimana dengan Pertanian Kedelai?"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode:** 01113\n- **Nama:** Pertanian Kedelai\n- **Deskripsi:** Kelompok ini mencakup usaha pertanian kedelai mulai dari kegiatan pengolahan lahan, penanaman, pemeliharaan, dan juga pemanenan dan pasca panen jika menjadi satu kesatuan kegiatan tanaman kedelai (kacang palawija). Termasuk kegiatan pembibitan dan pembenihan tanaman kedelai."
+  },
+  {
+    "role": "user",
+    "content": "kalau pertanian padi?"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode:** 0112\n- **Nama:** Pertanian Padi\n- **Deskripsi:** Subgolongan ini mencakup pertanian padi, termasuk pertanian padi organik dan padi yang sudah dimodifikasi. Termasuk kegiatan pembibitan dan pembenihan tanaman padi. Budidaya ikan di sawah (mina padi) digolongkan dalam kegiatan perikanan."
+  },
+  {
+    "role": "user",
+    "content": "bagaimana dengan perkebunan tebu?"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode:** 0114\n- **Nama:** Perkebunan tebu\n- **Deskripsi:** Subgolongan ini mencakup perkebunan tebu."
+  },
+  {
+    "role": "user",
+    "content": "pertanian buah anggur?"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode:** 0121\n- **Nama:** Pertanian Buah Anggur\n- **Deskripsi:** Subgolongan ini mencakup pertanian buah anggur untuk bahan minuman (wine) dan buah anggur di kebun anggur. Tidak termasuk industri minuman anggur (wine)."
+  }
+]
