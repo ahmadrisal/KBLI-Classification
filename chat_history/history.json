@@ -5,50 +5,74 @@
   },
   {
     "role": "user",
-    "content": "Siapakah lionel messi?"
+    "content": "Jelaskan KBLI dengan kode 95230!"
   },
   {
     "role": "assistant",
-    "content": "- **Kode:** 93192\n- **Nama:** Olahragawan, Juri dan Wasit Profesional\n- **Deskripsi:** Kelompok ini mencakup kegiatan olahragawan, juri, dan wasit profesional yang bertindak atas nama perorangan."
+    "content": "- **Kode KBLI:** 95230\n- **Nama:** Reparasi Alas Kaki Dan Barang Dari Kulit\n- **Deskripsi:** Kelompok ini mencakup usaha khusus jasa reparasi alas kaki dan barang dari kulit, seperti sepatu, sepatu boot,  sandal, koper, tas dan sebagainya. Termasuk jasa pemasangan tumit sepatu."
   },
   {
     "role": "user",
-    "content": "Kode KBLI yang membahas tentang \"Pertanian Gandum\" adalah?"
+    "content": "74202?"
   },
   {
     "role": "assistant",
-    "content": "- **Kode:** 01112\n- **Nama:** Pertanian Gandum\n- **Deskripsi:** Kelompok ini mencakup usaha pertanian gandum mulai dari kegiatan pengolahan lahan, penanaman, pemeliharaan, dan juga pemanenan dan pasca panen jika menjadi satu kesatuan kegiatan tanaman serealia gandum, seperti sorgum/cantel, gandum (wheat/oats), jelai (barley), gandum hitam (rye), jawawut (millet) dan sejenisnya. Termasuk kegiatan pembibitan dan pembenihan tanaman gandum."
+    "content": "- **Kode KBLI:** 74202\n- **Nama:** Aktivitas Angkutan Udara Khusus Pemotretan, Survei Dan Pemetaan\n- **Deskripsi:** Kelompok ini mencakup kegiatan angkutan udara untuk kegiatan pemotretan, survei dan pemetaan khusus dengan pesawat udara berdasarkan maksud dan tujuan tertentu dengan tujuan kota-kota atau provinsi di dalam negeri."
   },
   {
     "role": "user",
-    "content": "bagaimana dengan Pertanian Kedelai?"
+    "content": "bagaimana dengan kode 72?"
   },
   {
     "role": "assistant",
-    "content": "- **Kode:** 01113\n- **Nama:** Pertanian Kedelai\n- **Deskripsi:** Kelompok ini mencakup usaha pertanian kedelai mulai dari kegiatan pengolahan lahan, penanaman, pemeliharaan, dan juga pemanenan dan pasca panen jika menjadi satu kesatuan kegiatan tanaman kedelai (kacang palawija). Termasuk kegiatan pembibitan dan pembenihan tanaman kedelai."
+    "content": "- **Kode KBLI:** 72\n- **Nama:** Penelitian Dan Pengembangan Ilmu Pengetahuan\n- **Deskripsi:** Golongan pokok ini mencakup tiga jenis kegiatan penelitian dan pengembangan : (1) penelitian dasar, yaitu pekerjaan teoritikal dan eksperimental yang dilakukan terutama untuk mendapatkan ilmu pengetahuan baru dari pondasi dasar fenomena dan fakta yang terobservasi, tanpa aplikasi fakta-fakta atau penggunaan yang disebabkan olehnya, (2) penelitian aplikasi, yaitu investigasi original yang dilakukan dalam rangka mendapatkan ilmu pengetahuan baru, terutama bertujuan untuk maksud dan tujuan praktis tertentu, dan (3) pengembangan eksperimental, yaitu pekerjaan sistematis, menghasilkan ilmu pengetahuan yang didapat dari penelitian dan atau pengalaman praktis, bertujuan untuk menghasilkan material baru atau layanan baru dan untuk meningkatkan substansi dari yang sudah dihasilkan atau dipasang. Kegiatan penelitian dan pengembangan eksperimental pada golongan pokok ini terbagi ke dalam dua, yaitu ilmu pengetahuan alam dan teknik dan ilmu pengetahuan sosial dan humaniora. Golongan pokok ini tidak mencakup penelitian pemasaran."
   },
   {
     "role": "user",
-    "content": "kalau pertanian padi?"
+    "content": "bagiamana dengan 6110??"
   },
   {
     "role": "assistant",
-    "content": "- **Kode:** 0112\n- **Nama:** Pertanian Padi\n- **Deskripsi:** Subgolongan ini mencakup pertanian padi, termasuk pertanian padi organik dan padi yang sudah dimodifikasi. Termasuk kegiatan pembibitan dan pembenihan tanaman padi. Budidaya ikan di sawah (mina padi) digolongkan dalam kegiatan perikanan."
+    "content": "- **Kode KBLI:** 6110\n- **Nama:** Telekomunikasi Kabel\n- **Deskripsi:** Kelompok ini mencakup kegiatan penyediaan jasa telekomunikasi melalui kabel, seperti telepon kabel, telegraf, dan layanan data melalui jaringan kabel."
   },
   {
     "role": "user",
-    "content": "bagaimana dengan perkebunan tebu?"
+    "content": "kalau kode 01719 ??"
   },
   {
     "role": "assistant",
-    "content": "- **Kode:** 0114\n- **Nama:** Perkebunan tebu\n- **Deskripsi:** Subgolongan ini mencakup perkebunan tebu."
+    "content": "- **Kode KBLI:** 01719\n- **Nama:** Perburuan dan Penangkapan Satwa Liar Lainnya\n- **Deskripsi:** Kelompok ini mencakup usaha perburuan dan penangkapan satwa liar lainnya dalam rangka pengendalian populasi dan pelestarian. Termasuk perburuan dan penangkapan satwa liar lainnya  dengan perangkap, penangkapan satwa liar lainnya (mati atau hidup) untuk makanan,  kulit atau untuk penelitian, untuk  ditempatkan dalam kebun binatang atau sebagai hewan peliharaan. Termasuk perburuan dan penangkapan satwa liar lainnya untuk diambil organnya. Termasuk dalam kelompok ini adalah satwa liar yang belum tercakup dalam kelompok 01711 s.d. 01715."
   },
   {
     "role": "user",
-    "content": "pertanian buah anggur?"
+    "content": "kalau kode 1?"
   },
   {
     "role": "assistant",
-    "content": "- **Kode:** 0121\n- **Nama:** Pertanian Buah Anggur\n- **Deskripsi:** Subgolongan ini mencakup pertanian buah anggur untuk bahan minuman (wine) dan buah anggur di kebun anggur. Tidak termasuk industri minuman anggur (wine)."
+    "content": "Saya tidak bisa menjawab pertanyaan tersebut."
+  },
+  {
+    "role": "user",
+    "content": "maksud saya berikan penjelasan KBLI dengan kode A"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode KBLI:** A\n- **Nama:** Pertanian, Kehutanan dan Perikanan\n- **Deskripsi:** Kategori ini mencakup semua kegiatan ekonomi/lapangan usaha, yang meliputi pertanian tanaman pangan, perkebunan, hortikultura, peternakan, pemanenan hasil hutan serta penangkapan dan budidaya ikan/biota air. Kategori ini juga mencakup jasa penunjang masing-masing kegiatan ekonomi tersebut."
+  },
+  {
+    "role": "user",
+    "content": "kalau kode 01?"
+  },
+  {
+    "role": "assistant",
+    "content": "Saya tidak bisa menjawab pertanyaan tersebut karena tidak ada KBLI dengan kode 01."
+  },
+  {
+    "role": "user",
+    "content": "0111 ?"
+  },
+  {
+    "role": "assistant",
+    "content": "- **Kode KBLI:** 0111\n- **Nama:** Pertanian serealia (bukan padi), aneka kacang dan biji-bijian penghasil minyak\n- **Deskripsi:** Subgolongan ini mencakup pertanian semua serealia, aneka kacang dan biji-bijian penghasil minyak di lahan terbuka, termasuk pertanian tanaman organik dan pertanian tanaman yang telah dimodifikasi. Pertanian tanaman ini sering dikombinasikan dalam unit pertanian. Subgolongan ini mencakup pertanian serealia seperti gandum, jagung, sorgum, gandum untuk membuat bir (barley), gandum hitam (rye), oats, millet dan serealia lainnya, pertanian aneka kacang palawija, pertanian aneka kacang hortikultura, dan pertanian biji-bijian penghasil minyak seperti biji kapas, biji castor, biji rami, biji mustard, niger seeds, rapeseed/canola, biji wijen, safflower seeds, biji bunga matahari dan tanaman penghasil minyak lainnya."
   }
 ]

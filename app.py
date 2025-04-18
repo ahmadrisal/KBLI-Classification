@@ -6,18 +6,15 @@ from dotenv import load_dotenv
 
 # Pinecone & LangChain imports
 from pinecone import Pinecone, ServerlessSpec
-from langchain.vectorstores import Pinecone as PineconeStore
 from langchain_pinecone.vectorstores import PineconeVectorStore
-from langchain.schema import Document, HumanMessage, AIMessage
+from langchain.schema import HumanMessage, AIMessage
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.retrievers.self_query.base import SelfQueryRetriever
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
 from langchain.chains.query_constructor.base import AttributeInfo
-from langchain.retrievers import MergerRetriever, ContextualCompressionRetriever
-from langchain_community.document_transformers import EmbeddingsRedundantFilter
-from langchain.retrievers.document_compressors.base import DocumentCompressorPipeline
+from langchain.retrievers import MergerRetriever
 from langchain_core.vectorstores import VectorStore
 from langchain_core.embeddings import Embeddings
 from langchain_core.language_models.base import BaseLanguageModel
@@ -128,11 +125,15 @@ def init_chain():
     llm         = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=openai_api_key, temperature=0)
 
     system_instructions = """
-Answer with:
-- **Kode:** <kode KBLI>
+If you know the answer, respond with the KBLI classification in the following points format:
+- **Kode KBLI:** <kode KBLI>
 - **Nama:** <classification name>
 - **Deskripsi:** <detailed description>
+
+Always respond in Indonesian.
+If the question is not clear, ask for clarification.
 If the question is unrelated to KBLI, say you cannot answer.
+If in the question there is a keyword "kode" or "kode kbli", and in the context there is no the same "kode", then you should answer with the code in the context.
 """.strip()
 
     discern_prompt = PromptTemplate(
@@ -173,49 +174,99 @@ from langchain.chains.query_constructor.base import (
     StructuredQueryOutputParser, get_query_constructor_prompt
 )
 
+
+DEFAULT_SCHEMA = """\
+<< Structured Request Schema >>
+When responding use a markdown code snippet with a JSON object formatted in the following schema:
+
+```json
+{{{{
+    "query": string \\ text string to compare to document contents
+    "filter": string \\ logical condition statement for filtering documents
+}}}}
+```
+
+The query string should contain only text that is expected to match the contents of documents. Any conditions in the filter should not be mentioned in the query as well.
+
+A logical condition statement is composed of one or more comparison and logical operation statements.
+
+You can only use comparison statement takes the form: `comp(attr, val)`:
+- `comp` ({allowed_comparators}): comparator
+- `attr` (string):  name of attribute to apply the comparison to
+- `val` (string): is the comparison value
+
+Make sure that you only use the comparators listed above and no others.
+Make sure that filters only refer to attributes that exist in the data source.
+Make sure that the filter is a valid logical condition statement.
+Make sure all attributes are in lowercase.
+The available attributes are: `kode`, `kategori`, `digit`, `judul`.
+All attributes are strings, and the values are strings as well. You need to use double quotes for the values.
+
+For example, if the user asks "Deskripsi KBLI dengan kode 74202", you should filter 'kode' to be '74202' and the query should be "Deskripsi KBLI".
+"""
+
+DEFAULT_SCHEMA_PROMPT = PromptTemplate.from_template(DEFAULT_SCHEMA)
+
+
 def get_kbli_retriever(
     vector_store: VectorStore,
     llm_model: BaseLanguageModel,
     embed_model: Embeddings,
     top_k: int = 3
 ):
-    retriever_sim = vector_store.as_retriever(search_type="similarity", search_kwargs={"k":top_k})
-    retriever_mmr = vector_store.as_retriever(search_type="mmr", search_kwargs={"k":top_k, "fetch_k":top_k*3})
+    # 1) Similarity‐based retriever
+    retriever_sim = vector_store.as_retriever(
+        search_type="similarity", search_kwargs={"k": top_k}
+    )
+    # 2) MMR retriever
+    retriever_mmr = vector_store.as_retriever(
+        search_type="mmr", search_kwargs={"k": top_k, "fetch_k": top_k * 3}
+    )
 
     pinecone_translator = PineconeTranslator()
+
+    # 3) Self‑Query Retriever with correct AttributeInfo kwargs
     metadata_info = [
-        AttributeInfo(name="kategori", description="Primary KBLI category", type="string"),
-        AttributeInfo(name="digit",    description="Number of digits in code", type="string"),
-        AttributeInfo(name="kode",     description="Full KBLI code", type="string"),
-        AttributeInfo(name="judul",    description="KBLI classification title", type="string"),
+        AttributeInfo(name="kategori", description="Primary KBLI category (A, B, …)",    type="string"),
+        AttributeInfo(name="digit",    description="Number of digits in code level",     type="string"),
+        AttributeInfo(name="kode",     description="Full KBLI code, e.g. '0111' or '95230'", type="string"),
+        AttributeInfo(name="judul",    description="KBLI classification title",         type="string"),
     ]
-    schema_prompt = PromptTemplate.from_template(
-        "<< Structured Request Schema >>\nUse a JSON snippet with 'query' and 'filter'."
-    )
+
     prompt = get_query_constructor_prompt(
         document_contents="metadata and content",
         attribute_info=metadata_info,
-        schema_prompt=schema_prompt,
+        schema_prompt=DEFAULT_SCHEMA_PROMPT,
         allowed_comparators=pinecone_translator.allowed_comparators,
         allowed_operators=pinecone_translator.allowed_operators
     )
-    output_parser    = StructuredQueryOutputParser.from_components()
+
+    output_parser = StructuredQueryOutputParser.from_components()
     query_constructor = prompt | llm_model | output_parser
 
     retriever_self = SelfQueryRetriever(
         query_constructor=query_constructor,
         vectorstore=vector_store,
         search_type="mmr",
-        search_kwargs={"k":top_k, "lambda_mult":0.85, "fetch_k":40}
+        search_kwargs={"k": top_k, 'lambda_mult': 0.85, 'fetch_k': 40,},
+        verbose=True,
+        use_original_query=True,
+        metadata_info=metadata_info,
     )
 
-    merged = MergerRetriever(retrievers=[retriever_mmr, retriever_sim, retriever_self])
-    redundancy_filter = EmbeddingsRedundantFilter(embeddings=embed_model)
-    compressor        = DocumentCompressorPipeline(transformers=[redundancy_filter])
-    return ContextualCompressionRetriever(
-        base_retriever=merged,
-        base_compressor=compressor
-    )
+    # 4) Merge similarity & mmr
+    merged = MergerRetriever(retrievers=[retriever_self, retriever_mmr, retriever_sim])
+
+    # # 5) Deduplicate via embeddings‐based filter
+    # redundancy_filter = EmbeddingsRedundantFilter(embeddings=embed_model)
+    # compressor = DocumentCompressorPipeline(transformers=[redundancy_filter])
+    # filtered = ContextualCompressionRetriever(
+    #     base_retriever=merged,
+    #     base_compressor=compressor
+    # )
+
+    return merged
+
 
 # Streamlit App
 st.set_page_config(page_title="KBLI Chatbot", page_icon="📚", layout="centered")
