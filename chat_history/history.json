@@ -5,74 +5,106 @@
   },
   {
     "role": "user",
-    "content": "Jelaskan KBLI dengan kode 95230!"
+    "content": "jelaskan KBLI dengan kode 95230"
   },
   {
     "role": "assistant",
-    "content": "- **Kode KBLI:** 95230\n- **Nama:** Reparasi Alas Kaki Dan Barang Dari Kulit\n- **Deskripsi:** Kelompok ini mencakup usaha khusus jasa reparasi alas kaki dan barang dari kulit, seperti sepatu, sepatu boot,  sandal, koper, tas dan sebagainya. Termasuk jasa pemasangan tumit sepatu."
+    "content": "**Kode KBLI:** 95230\n\n**Nama:** Reparasi Alas Kaki Dan Barang Dari Kulit\n\n**Deskripsi:** \nKelompok ini mencakup usaha khusus jasa reparasi alas kaki dan barang dari kulit, seperti sepatu, sepatu boot,  sandal, koper, tas dan sebagainya. Termasuk jasa pemasangan tumit sepatu."
   },
   {
     "role": "user",
-    "content": "74202?"
+    "content": "bagaimana dengan 74202?"
   },
   {
     "role": "assistant",
-    "content": "- **Kode KBLI:** 74202\n- **Nama:** Aktivitas Angkutan Udara Khusus Pemotretan, Survei Dan Pemetaan\n- **Deskripsi:** Kelompok ini mencakup kegiatan angkutan udara untuk kegiatan pemotretan, survei dan pemetaan khusus dengan pesawat udara berdasarkan maksud dan tujuan tertentu dengan tujuan kota-kota atau provinsi di dalam negeri."
+    "content": "**Kode KBLI:** 74202\n\n**Nama:** Aktivitas Angkutan Udara Khusus Pemotretan, Survei Dan Pemetaan\n\n**Deskripsi:** \n\nKelompok ini mencakup kegiatan angkutan udara untuk kegiatan pemotretan, survei dan pemetaan khusus dengan pesawat udara berdasarkan maksud dan tujuan tertentu dengan tujuan kota-kota atau provinsi di dalam negeri."
   },
   {
     "role": "user",
-    "content": "bagaimana dengan kode 72?"
+    "content": "02111"
   },
   {
     "role": "assistant",
-    "content": "- **Kode KBLI:** 72\n- **Nama:** Penelitian Dan Pengembangan Ilmu Pengetahuan\n- **Deskripsi:** Golongan pokok ini mencakup tiga jenis kegiatan penelitian dan pengembangan : (1) penelitian dasar, yaitu pekerjaan teoritikal dan eksperimental yang dilakukan terutama untuk mendapatkan ilmu pengetahuan baru dari pondasi dasar fenomena dan fakta yang terobservasi, tanpa aplikasi fakta-fakta atau penggunaan yang disebabkan olehnya, (2) penelitian aplikasi, yaitu investigasi original yang dilakukan dalam rangka mendapatkan ilmu pengetahuan baru, terutama bertujuan untuk maksud dan tujuan praktis tertentu, dan (3) pengembangan eksperimental, yaitu pekerjaan sistematis, menghasilkan ilmu pengetahuan yang didapat dari penelitian dan atau pengalaman praktis, bertujuan untuk menghasilkan material baru atau layanan baru dan untuk meningkatkan substansi dari yang sudah dihasilkan atau dipasang. Kegiatan penelitian dan pengembangan eksperimental pada golongan pokok ini terbagi ke dalam dua, yaitu ilmu pengetahuan alam dan teknik dan ilmu pengetahuan sosial dan humaniora. Golongan pokok ini tidak mencakup penelitian pemasaran."
+    "content": "**Kode KBLI:** 02111\n\n**Nama:** Pemanfaatan Kayu Hutan Tanaman pada Hutan Produksi\n\n**Deskripsi:** \nKelompok ini mencakup usaha pemanfaatan kayu yang meliputi penanaman atau pengayaan, pemeliharaan, pemanenan atau penebangan hasil yang berasal dari hutan tanaman pada hutan produksi. Jenis tanaman kayu kehutanan seperti jati, pinus, mahoni, sonokeling, sengon/albasia/jeunjing, jabon, akasia, ekalitus, cendana, dan tanaman kayu kehutanan lainnya."
   },
   {
     "role": "user",
-    "content": "bagiamana dengan 6110??"
+    "content": "kalau kode 80?"
   },
   {
     "role": "assistant",
-    "content": "- **Kode KBLI:** 6110\n- **Nama:** Telekomunikasi Kabel\n- **Deskripsi:** Kelompok ini mencakup kegiatan penyediaan jasa telekomunikasi melalui kabel, seperti telepon kabel, telegraf, dan layanan data melalui jaringan kabel."
+    "content": "**Kode KBLI:** 80\n\n**Nama:** Aktivitas Keamanan dan Penyelidikan\n\n**Deskripsi:** \nGolongan pokok ini mencakup kegiatan penyediaan jasa yang berkaitan dengan keamanan, seperti jasa investigasi dan detektif, jasa patroli dan penjagaan, pengaturan keamanan barang berharga dalam penyimpanan, jasa mobil lapis baja, pengoperasian sistem tanda bahaya elektronik untuk keamanan di mana kadang juga mencakup penjualan jasa pemasangan instalasi dan perbaikan dari sistem tersebut. Jika kegiatan tersebut tidak menjadi satu kesatuan atau terpisah, maka masing-masing kegiatan dicakup pada klasifikasi yang bersesuaian."
   },
   {
     "role": "user",
-    "content": "kalau kode 01719 ??"
+    "content": "berapakah kode dengan judul \"Aktivitas Agen Perjalanan, Penyelenggara Tur Dan Jasa Reservasi Lainnya\""
   },
   {
     "role": "assistant",
-    "content": "- **Kode KBLI:** 01719\n- **Nama:** Perburuan dan Penangkapan Satwa Liar Lainnya\n- **Deskripsi:** Kelompok ini mencakup usaha perburuan dan penangkapan satwa liar lainnya dalam rangka pengendalian populasi dan pelestarian. Termasuk perburuan dan penangkapan satwa liar lainnya  dengan perangkap, penangkapan satwa liar lainnya (mati atau hidup) untuk makanan,  kulit atau untuk penelitian, untuk  ditempatkan dalam kebun binatang atau sebagai hewan peliharaan. Termasuk perburuan dan penangkapan satwa liar lainnya untuk diambil organnya. Termasuk dalam kelompok ini adalah satwa liar yang belum tercakup dalam kelompok 01711 s.d. 01715."
+    "content": "**Kode KBLI:** 79119\n\n**Nama:** Aktivitas Agen Perjalanan Lainnya\n\n**Deskripsi:** \nKelompok ini mencakup usaha yang kegiatannya tidak termasuk dalam kelompok 79111 dan 79112, melakukan pemesanan dan penjualan tiket angkutan udara, laut dan darat, baik untuk tujuan dalam negeri maupun luar negeri."
   },
   {
     "role": "user",
-    "content": "kalau kode 1?"
+    "content": "berikan KBLI kode 79111 dan 79112"
   },
   {
     "role": "assistant",
-    "content": "Saya tidak bisa menjawab pertanyaan tersebut."
+    "content": "**Kode KBLI:** 7911\n\n**Nama:** Aktivitas Agen Perjalanan\n\n**Deskripsi:** \nSubgolongan ini mencakup kegiatan agen, terutama yang melakukan penjualan paket wisata, paket tur, paket ibadah umroh dan haji khusus, jasa transportasi dan akomodasi berdasarkan penjualan partai besar atau eceran pada masyarakat umum dan klien komersil.\n\n**Kode KBLI:** 7912\n\n**Nama:** Aktivitas Agen Perjalanan, Penyelenggara Tur Dan Jasa Reservasi Lainnya\n\n**Deskripsi:** \nGolongan pokok ini mencakup kegiatan keagenan, yang utamanya berkaitan dengan penjualan jasa travel, tur, transportasi dan akomodasi kepada masyarakat umum dan klien komersial dan kegiatan yang mengurus dan mengelola tur yang dijual melalui agen perjalanan atau secara langsung oleh agen seperti operator tur dan jasa lain yang berhubungan dengan travel termasuk jasa informasi, promosi dan pemandu wisata."
   },
   {
     "role": "user",
-    "content": "maksud saya berikan penjelasan KBLI dengan kode A"
+    "content": "yang saya minta adalah 79111 dan 79112 bukan 7911 dan 7912"
   },
   {
     "role": "assistant",
-    "content": "- **Kode KBLI:** A\n- **Nama:** Pertanian, Kehutanan dan Perikanan\n- **Deskripsi:** Kategori ini mencakup semua kegiatan ekonomi/lapangan usaha, yang meliputi pertanian tanaman pangan, perkebunan, hortikultura, peternakan, pemanenan hasil hutan serta penangkapan dan budidaya ikan/biota air. Kategori ini juga mencakup jasa penunjang masing-masing kegiatan ekonomi tersebut."
+    "content": "**Kode KBLI:** 79111\n\n**Nama:** Aktivitas Agen Perjalanan Wisata\n\n**Deskripsi:** \nKelompok ini mencakup usaha yang kegiatannya sebagai perantara penjualan paket wisata, baik secara daring (online) maupun luring (offline), yang dikemas oleh biro perjalanan wisata; memesan tiket angkutan darat, laut, dan udara, baik untuk tujuan dalam negeri maupun luar negeri; memesan akomodasi, restoran, dan tiket pertunjukan seni budaya, serta kunjungan ke destinasi atau daya tarik wisata; dan mengurus dokumen perjalanan berupa paspor dan visa atau dokumen lain yang dipersamakan.\n\n**Kode KBLI:** 79112\n\n**Nama:** Aktivitas Agen Perjalanan Ibadah Umroh dan Haji Khusus\n\n**Deskripsi:** \nKelompok ini mencakup usaha yang kegiatannya sebagai perantara penjualan paket ibadah umroh dan haji khusus, baik secara daring (online) maupun luring (offline), yang dikemas oleh biro perjalanan ibadah umroh dan haji khusus; memesan tiket angkutan darat, laut, dan udara, baik untuk tujuan dalam negeri maupun luar negeri; memesan akomodasi, restoran, dan tiket pertunjukan seni budaya, serta kunjungan ke destinasi atau daya tarik wisata; dan mengurus dokumen perjalanan berupa paspor dan visa atau dokumen lain yang dipersamakan."
   },
   {
     "role": "user",
-    "content": "kalau kode 01?"
+    "content": "apa kode KBLI untuk guru SMP"
   },
   {
     "role": "assistant",
-    "content": "Saya tidak bisa menjawab pertanyaan tersebut karena tidak ada KBLI dengan kode 01."
+    "content": "**Kode KBLI:** 85112\n\n**Nama:** Pendidikan Menengah Pertama/Tsanawiyah Pemerintah\n\n**Deskripsi:** \n\nKelompok ini mencakup pendidikan sekolah menengah pertama yang berlangsung selama tiga tahun yang dikelola oleh pemerintah termasuk sekolah menengah keagamaan dan pendidikan khusus yang sederajat, seperti Sekolah Menengah Pertama Negeri, Madrasah Tsanawiyah Negeri dan Sekolah Luar Biasa Menengah Pertama Negeri."
   },
   {
     "role": "user",
-    "content": "0111 ?"
+    "content": "siapa presiden indonesia?"
   },
   {
     "role": "assistant",
-    "content": "- **Kode KBLI:** 0111\n- **Nama:** Pertanian serealia (bukan padi), aneka kacang dan biji-bijian penghasil minyak\n- **Deskripsi:** Subgolongan ini mencakup pertanian semua serealia, aneka kacang dan biji-bijian penghasil minyak di lahan terbuka, termasuk pertanian tanaman organik dan pertanian tanaman yang telah dimodifikasi. Pertanian tanaman ini sering dikombinasikan dalam unit pertanian. Subgolongan ini mencakup pertanian serealia seperti gandum, jagung, sorgum, gandum untuk membuat bir (barley), gandum hitam (rye), oats, millet dan serealia lainnya, pertanian aneka kacang palawija, pertanian aneka kacang hortikultura, dan pertanian biji-bijian penghasil minyak seperti biji kapas, biji castor, biji rami, biji mustard, niger seeds, rapeseed/canola, biji wijen, safflower seeds, biji bunga matahari dan tanaman penghasil minyak lainnya."
+    "content": "**Kode KBLI:** 84112\n\n**Nama:** Penyelenggaraan Pemerintah Negara Dan Kesekretariatan Negara\n\n**Deskripsi:** \nKelompok ini mencakup seluruh kegiatan proses penyelenggaraan pemerintah untuk mencapai tujuan negara yang telah ditetapkan oleh badan legislatif, yaitu Presiden, Wakil Presiden, Sekretariat Negara, Sekretariat Kabinet, Departemen Dalam Negeri, Gubernur, Bupati, Walikota, Camat dan Lurah/Kepala Desa, yang mempunyai tugas merencanakan, memimpin dan mengawasi penyelenggaraan pemerintah."
+  },
+  {
+    "role": "user",
+    "content": "apakah ada kode kbli 012345"
+  },
+  {
+    "role": "assistant",
+    "content": "Saya tidak bisa menjawab pertanyaan tersebut karena tidak ada KBLI dengan kode 012345."
+  },
+  {
+    "role": "user",
+    "content": "kode KBLI penjual toko kelontong"
+  },
+  {
+    "role": "assistant",
+    "content": "**Kode KBLI:** 47192\n\n**Nama:** Perdagangan Eceran Berbagai Macam Barang Yang Utamanya Bukan Makanan, Minuman Atau Tembakau (barang-barang Kelontong) Bukan Di Toserba (Department Store)\n\n**Deskripsi:** \nKelompok ini mencakup usaha perdagangan eceran berbagai jenis barang yang utamanya bukan makanan, minuman atau tembakau bukan toserba/department store. Pada umumnya barang-barang yang diperdagangkan antara lain pakaian, perabot rumah tangga, perhiasan, mainan anak-anak dan kosmetik, yang terintegrasi di bawah satu pengelolaan. Misalnya toko barang kelontong."
+  },
+  {
+    "role": "user",
+    "content": "pns"
+  },
+  {
+    "role": "assistant",
+    "content": "**Kode KBLI:** 84115\n\n**Nama:** Lembaga Pemerintah Non Kementrian Dengan Tugas Khusus\n\n**Deskripsi:** \nKelompok ini mencakup kegiatan lembaga/badan/instansi pemerintah non lembaga pemerintahan bidang dengan tugas khusus serta kesekretariatannya, yang mempunyai kewajiban membantu kelancaran penyelenggaraan pemerintahan, seperti Arsip Nasional, BAKN, LAN, BKKBN, LIPI, Lembaga Sandi Negara, BPS, dan lainnya. Tidak tercakup dalam kode ini badan untuk penanggulangan bencana (84234)."
+  },
+  {
+    "role": "user",
+    "content": "tukang bakso"
+  },
+  {
+    "role": "assistant",
+    "content": "**Kode KBLI:** 56104\n\n**Nama:** Penyediaan Makanan Keliling/Tempat Tidak Tetap\n\n**Deskripsi:** \nKelompok ini mencakup usaha jasa pangan yang menjual dan menyajikan makanan siap dikonsumsi yang didahului dengan proses pembuatan dan biasanya dijual dengan cara berkeliling, seperti tukang bakso keliling, tukang gorengan keliling, tukang otak-otak keliling, tukang empek-empek keliling dan lain-lain."
   }
 ]

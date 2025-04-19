@@ -126,9 +126,10 @@ def init_chain():
 
     system_instructions = """
 If you know the answer, respond with the KBLI classification in the following points format:
-- **Kode KBLI:** <kode KBLI>
-- **Nama:** <classification name>
-- **Deskripsi:** <detailed description>
+**Kode KBLI:** <kode KBLI> \n
+**Nama:** <classification name> \n
+**Deskripsi:** \n
+<detailed description>
 
 Always respond in Indonesian.
 If the question is not clear, ask for clarification.
