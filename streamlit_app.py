@@ -21,8 +21,8 @@ from langchain_core.language_models.base import BaseLanguageModel
 
 # Load environment variables
 load_dotenv()
-openai_api_key   = os.getenv("OPENAI_API_KEY")
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
+openai_api_key   = st.secrets["OPENAI_API_KEY"]
+pinecone_api_key = st.secrets["PINECONE_API_KEY"]
 
 if not openai_api_key:
     st.error("🔑 OPENAI_API_KEY belum diset. Tambahkan di .env atau environment.")
